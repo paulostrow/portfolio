@@ -130,6 +130,24 @@ a{ color:inherit; }
 }
 @media(max-width:720px){ .case-brief{ text-align:left; max-width:100%; } }
 
+.cta-visit{
+  display:inline-flex; align-items:center; gap:8px;
+  margin-top:24px;
+  padding:11px 22px;
+  background:var(--cobalt);
+  color:var(--white);
+  font-family:'Space Grotesk', sans-serif;
+  font-weight:700;
+  font-size:13px;
+  border-radius:30px;
+  text-decoration:none;
+  transition:background .2s ease;
+}
+.cta-visit:hover{ background:#465CFF; }
+.cta-visit .arrow{ transition:transform .2s ease; }
+.cta-visit:hover .arrow{ transform:translateX(3px); }
+.cta-row{ margin-top:8px; }
+
 .quote-block{ margin-top:56px; }
 .quote-label{
   font-family:'Space Mono', monospace; font-size:11px; letter-spacing:3px; color:var(--gold);
@@ -173,7 +191,8 @@ a{ color:inherit; }
   font-family:'Space Mono', monospace; font-size:10px; color:var(--muted);
   flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
-.frame-url a{ text-decoration:none; color:inherit; }
+.frame-url a{ text-decoration:none; color:var(--cobalt); cursor:pointer; }
+.frame-url a:hover{ text-decoration:underline; }
 .case-footer-text{ font-size:14px; line-height:1.65; color:var(--muted-2); flex:1; min-width:280px; }
 .case-footer-text b{ color:var(--white); font-weight:600; }
 
@@ -367,6 +386,8 @@ a{ color:inherit; }
       <div class="case-brief">Brief: reposition a Brooklyn practice to attract a younger audience and stand out in a saturated market, without losing clinical trust.</div>
     </div>
 
+    <a class="cta-visit" href="https://smileloungebk.com" target="_blank" rel="noopener">Visit smileloungebk.com <span class="arrow">&rarr;</span></a>
+
     <div class="quote-block">
       <div class="quote-label">THE HOMEPAGE, AS WRITTEN</div>
       <div class="quote">&ldquo;Your <span class="accent">Neighborhood</span> Greenpoint Dentists.&rdquo;</div>
@@ -433,6 +454,8 @@ a{ color:inherit; }
       <div class="case-brief">Brief: reposition a century-old Chicago practice as an elevated, modern experience, without losing the heritage that makes it credible.</div>
     </div>
 
+    <a class="cta-visit" href="https://strobeldentistry.com" target="_blank" rel="noopener">Visit strobeldentistry.com <span class="arrow">&rarr;</span></a>
+
     <div class="quote-block">
       <div class="quote-label">THE HOMEPAGE, AS WRITTEN</div>
       <div class="quote">&ldquo;Elevated care, <span class="accent">backed by science.</span>&rdquo;</div>
@@ -484,6 +507,8 @@ a{ color:inherit; }
       </div>
       <div class="case-brief">This case study is about structure more than headlines: what a visitor sees first, and why.</div>
     </div>
+
+    <a class="cta-visit" href="https://www.audubondentalcenterofclinton.com" target="_blank" rel="noopener">Visit audubondentalcenterofclinton.com <span class="arrow">&rarr;</span></a>
 
     <div class="editorial-grid" style="margin-top:40px; padding-top:0; border-top:none;">
       <div class="editorial-item">
@@ -565,6 +590,8 @@ a{ color:inherit; }
       <div class="case-brief">Brief: apply the same positioning skill set to a completely different category. Luxury restroom trailer rentals for weddings, events, and job sites.</div>
     </div>
 
+    <a class="cta-visit" href="https://privychambers.com" target="_blank" rel="noopener">Visit privychambers.com <span class="arrow">&rarr;</span></a>
+
     <div class="quote-block">
       <div class="quote-label">THE HOMEPAGE, AS WRITTEN</div>
       <div class="quote">&ldquo;Everything we do is <span class="accent">just nicer.</span>&rdquo;</div>
@@ -614,6 +641,8 @@ a{ color:inherit; }
       <div class="case-brief">Brief: ghostwrite blog content for a Delmain law-firm client, translating legal concepts into guidance a small-business owner can actually use.</div>
     </div>
 
+    <a class="cta-visit" href="https://www.jjh-law.com/business-transactions-due-diligence/" target="_blank" rel="noopener">Read the full post <span class="arrow">&rarr;</span></a>
+
     <div class="quote-block">
       <div class="quote-label">THE HEADLINE, AS WRITTEN</div>
       <div class="quote">&ldquo;Navigating Business Transactions: The <span class="accent">Critical Role</span> of Due Diligence.&rdquo;</div>
@@ -651,6 +680,8 @@ a{ color:inherit; }
       </div>
       <div class="case-brief">Brief: ghostwrite parent-facing blog content for a pediatric dental client, under the dentist's own byline.</div>
     </div>
+
+    <a class="cta-visit" href="http://childrensdentistryofcharlottesville.com/2023/05/04/tips-children-oral-health/" target="_blank" rel="noopener">Read the full post <span class="arrow">&rarr;</span></a>
 
     <div class="quote-block">
       <div class="quote-label">THE HEADLINE, AS WRITTEN</div>
@@ -692,6 +723,11 @@ a{ color:inherit; }
         <div class="tag">Financial &amp; Investor Writing</div>
       </div>
       <div class="case-brief">A weekly market newsletter, written in-house for Oreninc from 2012 to 2016, before my time at Delmain. A financial research and publishing company serving the Canadian junior resource sector.</div>
+    </div>
+
+    <div style="display:flex; gap:14px; flex-wrap:wrap;">
+      <a class="cta-visit" href="https://oreninc.co/index/oreninc-index-update-january-7-2016/" target="_blank" rel="noopener">Read the Jan 2016 edition <span class="arrow">&rarr;</span></a>
+      <a class="cta-visit" href="https://oreninc.co/index/oreninc-index-update-march-6-2014/" target="_blank" rel="noopener">Read the Mar 2014 edition <span class="arrow">&rarr;</span></a>
     </div>
 
     <div class="editorial-grid">
