@@ -242,6 +242,20 @@ a{ color:inherit; }
   font-family:'Space Grotesk', sans-serif; font-size:17px; color:var(--muted-2);
   margin-top:20px; max-width:540px; line-height:1.55;
 }
+.closing-bio{
+  font-family:'Inter', sans-serif; font-size:15px; color:#C7C7D6;
+  margin-top:0; max-width:640px; line-height:1.7;
+}
+.bio-row{
+  display:flex; align-items:flex-start; gap:28px;
+  margin-top:26px; flex-wrap:wrap;
+}
+.bio-photo{
+  width:104px; height:104px; border-radius:50%;
+  object-fit:cover; flex-shrink:0;
+  border:2px solid var(--gold);
+}
+@media(max-width:560px){ .bio-row{ flex-direction:column; } }
 .contact-row{
   display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:24px;
   margin-top:64px; padding-top:26px; border-top:1px solid var(--line-light);
@@ -333,12 +347,10 @@ a{ color:inherit; }
     <div class="nav-name">Paul Ostrow</div>
     <div class="nav-links">
       <a href="#smilelounge">Smilelounge</a>
-      <a href="#strobel">Strobel</a>
-      <a href="#audubon">Audubon</a>
       <a href="#privy">Privy Chambers</a>
-      <a href="#jjh">JJH Law</a>
-      <a href="#pediatric-blog">Children's Dentistry</a>
       <a href="#oreninc">Oreninc</a>
+      <a href="#strobel">Strobel</a>
+      <a href="#jjh">JJH Law</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -444,148 +456,12 @@ a{ color:inherit; }
   </div>
 </section>
 
-<!-- ============ CASE 02: STROBEL DENTISTRY ============ -->
-<section class="section dark" id="strobel">
-  <div class="wrap">
-    <div class="case-top">
-      <div>
-        <div class="eyebrow section-label">CASE STUDY 02</div>
-        <h2 class="big">STROBEL DENTISTRY</h2>
-        <div class="tag">SEO Copywriting &amp; Premium Positioning</div>
-      </div>
-      <div class="case-brief">Brief: reposition a century-old Chicago practice as an elevated, modern experience, without losing the heritage that makes it credible.</div>
-    </div>
-
-    <a class="cta-visit" href="https://strobeldentistry.com" target="_blank" rel="noopener">Visit strobeldentistry.com <span class="arrow">&rarr;</span></a>
-
-    <div class="quote-block">
-      <div class="quote-label">THE HOMEPAGE, AS WRITTEN</div>
-      <div class="quote">&ldquo;Elevated care, <span class="accent">backed by science.</span>&rdquo;</div>
-      <div class="subquote">Trusted Downtown Chicago Dentists. Family-owned for three generations.</div>
-    </div>
-
-    <div class="case-footer">
-      <div class="mini-frame">
-        <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://strobeldentistry.com" target="_blank" rel="noopener">strobeldentistry.com</a></div></div>
-        <img src="assets/strobel-hero.jpg" alt="Strobel Dentistry homepage hero" loading="lazy">
-      </div>
-      <div class="case-footer-text">Strobel has practiced in the same Loop building since 1932. That's real, ownable authority most dental sites have to manufacture. The challenge was pairing that heritage with a premium, modern positioning without drifting into "stuffy legacy practice" on one side or "generic dental site" on the other. "Elevated care backed by science" carries both: the confidence of a hotel brand and the credibility of a specialty practice.</div>
-    </div>
-  </div>
-</section>
-
-<section class="grid-section" style="background:var(--paper);">
-  <div class="wrap" style="padding-top:64px;">
-    <div class="tiles">
-      <div class="tile" style="flex:1.5;">
-        <div class="tile-frame">
-          <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">strobeldentistry.com</div></div>
-          <img src="assets/strobel-elevated.jpg" alt="Strobel Dentistry, General, Cosmetic, and Airway Dentistry" loading="lazy">
-        </div>
-        <div class="tile-quote"><span class="mark">&ldquo;</span>Our Chicago dentists pair modern technology and advanced, specialized training with concierge-level service.<span class="mark">&rdquo;</span></div>
-      </div>
-    </div>
-    <div class="grid-bottom">
-      <div class="grid-bottom-item">
-        <h4>Strategy</h4>
-        <p>The heritage line ("Since 1932") does the trust-building most dental sites spend paragraphs on. That frees the rest of the copy to sell the modern experience: technology, comfort, concierge service, without re-litigating credibility on every page.</p>
-      </div>
-      <div class="grid-bottom-item impact">
-        <h4>Impact</h4>
-        <p>A positioning built to compete with Chicago's other downtown dental brands on tone, not only on services. Premium without being cold. Established without feeling dated.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CASE 03: AUDUBON (UX / STRATEGY) ============ -->
-<section class="section dark" id="audubon">
-  <div class="wrap">
-    <div class="case-top">
-      <div>
-        <div class="eyebrow section-label">CASE STUDY 03</div>
-        <h2 class="big">AUDUBON DENTAL CARE</h2>
-        <div class="tag">UX &amp; Conversion Strategy</div>
-      </div>
-      <div class="case-brief">This case study is about structure more than headlines: what a visitor sees first, and why.</div>
-    </div>
-
-    <a class="cta-visit" href="https://www.audubondentalcenterofclinton.com" target="_blank" rel="noopener">Visit audubondentalcenterofclinton.com <span class="arrow">&rarr;</span></a>
-
-    <div class="editorial-grid" style="margin-top:40px; padding-top:0; border-top:none;">
-      <div class="editorial-item">
-        <h4>Brief</h4>
-        <p>Increase new-patient appointments by restructuring the site around how patients actually decide, not only by rewriting the words already on the page.</p>
-      </div>
-      <div class="editorial-item">
-        <h4>My Role</h4>
-        <p>Partnered with the client and project team to identify the real decision drivers, then rebuilt the information architecture: what visitors see first, what earns its own page, and how many paths lead to booking.</p>
-      </div>
-      <div class="editorial-item">
-        <h4>The Fix</h4>
-        <p>Emergency care, insurance acceptance, and new-patient pricing existed somewhere on the old site, just not where or when patients needed them. Each got a dedicated page built around one specific search, and the strongest offer moved into the homepage's first screen.</p>
-      </div>
-    </div>
-
-    <div class="framing-note">
-      <h4>How the structure changed</h4>
-      <p>The rewrite wasn't only softer language. It meant fewer steps between a worried parent searching "emergency dentist near me" and a booked appointment. Each landing page answers one search intent completely, so a visitor never has to dig through a general services page to find out if they're covered or what a visit costs. That's an information-architecture decision as much as a writing one.</p>
-    </div>
-
-    <div class="case-footer">
-      <div class="mini-frame">
-        <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://www.audubondentalcenterofclinton.com" target="_blank" rel="noopener">audubondentalcenterofclinton.com</a></div></div>
-        <img src="assets/ad-hero.jpg" alt="Audubon Dental Care homepage hero" loading="lazy">
-      </div>
-      <div class="case-footer-text">Three dedicated pages came out of this restructure: emergency care, new-patient pricing, and insurance. Each one is built to answer a single high-intent search completely, with its own headline, offer, and path to booking.</div>
-    </div>
-  </div>
-</section>
-
-<section class="grid-section" style="background:var(--paper);">
-  <div class="wrap" style="padding-top:64px;">
-    <div class="tiles">
-      <div class="tile">
-        <div class="tile-frame">
-          <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">audubondentalcenterofclinton.com</div></div>
-          <img src="assets/ad-newpatient.jpg" alt="Audubon, New patient $149 special" loading="lazy">
-        </div>
-        <div class="tile-quote"><span class="mark">&ldquo;</span>New here? Get started for $149. No insurance? No problem.<span class="mark">&rdquo;</span></div>
-      </div>
-      <div class="tile">
-        <div class="tile-frame">
-          <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">audubondentalcenterofclinton.com</div></div>
-          <img src="assets/ad-sameday.jpg" alt="Audubon, Same-day appointments" loading="lazy">
-        </div>
-        <div class="tile-quote"><span class="mark">&ldquo;</span>Same-day appointments available. Emergency care when you need it.<span class="mark">&rdquo;</span></div>
-      </div>
-      <div class="tile">
-        <div class="tile-frame">
-          <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">audubondentalcenterofclinton.com</div></div>
-          <img src="assets/ad-emergency99.jpg" alt="Audubon, $99 emergency visit" loading="lazy">
-        </div>
-        <div class="tile-quote"><span class="mark">&ldquo;</span>Fast relief starts with a $99 emergency visit.<span class="mark">&rdquo;</span></div>
-      </div>
-    </div>
-    <div class="grid-bottom">
-      <div class="grid-bottom-item">
-        <h4>Why It Works</h4>
-        <p>Each page's headline names the exact objection stopping someone from booking, whether that's no insurance, dental anxiety, or cost, and answers it in the same breath, on a page built for that one visitor.</p>
-      </div>
-      <div class="grid-bottom-item impact">
-        <h4>Impact</h4>
-        <p>The client reported a measurable increase in new-patient appointments and said the site finally reflected how patients actually decide.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CASE 04: PRIVY CHAMBERS ============ -->
+<!-- ============ CASE 02: PRIVY CHAMBERS ============ -->
 <section class="section dark" id="privy" style="background:var(--ink-2);">
   <div class="wrap">
     <div class="case-top">
       <div>
-        <div class="eyebrow section-label">CASE STUDY 04</div>
+        <div class="eyebrow section-label">CASE STUDY 02</div>
         <h2 class="big">PRIVY CHAMBERS</h2>
         <div class="tag">Brand Voice &amp; Positioning, Outside Healthcare</div>
       </div>
@@ -631,96 +507,12 @@ a{ color:inherit; }
   </div>
 </section>
 
-<!-- ============ CASE 05: JJH LAW ============ -->
-<section class="section dark" id="jjh">
-  <div class="wrap">
-    <div class="case-top">
-      <div>
-        <div class="eyebrow section-label">CASE STUDY 05</div>
-        <h2 class="big">JJH LAW</h2>
-        <div class="tag">Content Marketing / SEO Blog Writing, Professional Services</div>
-      </div>
-      <div class="case-brief">Brief: ghostwrite blog content for a Delmain law-firm client, translating legal concepts into guidance a small-business owner can actually use.</div>
-    </div>
-
-    <a class="cta-visit" href="https://www.jjh-law.com/business-transactions-due-diligence/" target="_blank" rel="noopener">Read the full post <span class="arrow">&rarr;</span></a>
-
-    <div class="quote-block">
-      <div class="quote-label">THE HEADLINE, AS WRITTEN</div>
-      <div class="quote">&ldquo;Navigating Business Transactions: The <span class="accent">Critical Role</span> of Due Diligence.&rdquo;</div>
-      <div class="subquote">"In the intricate landscape of business transactions, the adage 'knowledge is power' holds particularly true."</div>
-    </div>
-
-    <div class="case-footer single-footer">
-      <div class="tiles" style="margin-top:0;">
-        <div class="tile" style="flex:1.3;">
-          <div class="tile-frame">
-            <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://www.jjh-law.com/business-transactions-due-diligence/" target="_blank" rel="noopener">jjh-law.com</a></div></div>
-            <img src="assets/jjh-hero.jpg" alt="JJH Law blog post, Navigating Business Transactions" loading="lazy">
-          </div>
-        </div>
-        <div class="tile">
-          <div class="tile-frame">
-            <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">jjh-law.com</div></div>
-            <img src="assets/jjh-second.jpg" alt="JJH Law blog post, Understanding Due Diligence" loading="lazy">
-          </div>
-        </div>
-      </div>
-      <div class="case-footer-text" style="margin-top:24px;">Ghostwritten for JJH Law, a Delmain client, this post breaks down a legal concept for readers with no legal background. It's written entirely in the attorney's voice, structured around the questions a business owner is already searching, and shipped as part of an ongoing blog program covering dozens of professional-services clients.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CASE 06: CHILDREN'S DENTISTRY BLOG ============ -->
-<section class="section dark" id="pediatric-blog">
-  <div class="wrap">
-    <div class="case-top">
-      <div>
-        <div class="eyebrow section-label">CASE STUDY 06</div>
-        <h2 class="big">CHILDREN'S DENTISTRY OF CHARLOTTESVILLE</h2>
-        <div class="tag">Content Marketing / SEO Blog Writing, Healthcare</div>
-      </div>
-      <div class="case-brief">Brief: ghostwrite parent-facing blog content for a pediatric dental client, under the dentist's own byline.</div>
-    </div>
-
-    <a class="cta-visit" href="http://childrensdentistryofcharlottesville.com/2023/05/04/tips-children-oral-health/" target="_blank" rel="noopener">Read the full post <span class="arrow">&rarr;</span></a>
-
-    <div class="quote-block">
-      <div class="quote-label">THE HEADLINE, AS WRITTEN</div>
-      <div class="quote">&ldquo;Tips For Helping Your Child Develop a <span class="accent">Positive Relationship</span> with Oral Health.&rdquo;</div>
-      <div class="subquote">"Establishing good habits early on can set a strong foundation for a lifetime of good health."</div>
-    </div>
-
-    <div class="case-footer">
-      <div class="mini-frame">
-        <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="http://childrensdentistryofcharlottesville.com/2023/05/04/tips-children-oral-health/" target="_blank" rel="noopener">childrensdentistryofcharlottesville.com</a></div></div>
-        <img src="assets/cdoc-hero.jpg" alt="Children's Dentistry of Charlottesville blog post hero" loading="lazy">
-      </div>
-      <div class="case-footer-text">Ghostwritten under Dr. John Will's byline, this piece turns routine pediatric advice (brush twice a day, limit sugar, lead by example) into something a nervous or first-time parent will actually finish reading. Each tip is broken into its own scannable step rather than a wall of clinical instruction, and the tone stays reassuring throughout. The goal isn't to alarm a parent into compliance. It's to make good habits feel manageable. Written and published as part of an ongoing content program for the practice.</div>
-    </div>
-  </div>
-</section>
-
-<section class="grid-section" style="background:var(--paper); padding:0 0 96px;">
-  <div class="wrap" style="padding-top:0;">
-    <div class="tiles">
-      <div class="tile" style="flex:1.5;">
-        <div class="tile-frame">
-          <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">childrensdentistryofcharlottesville.com</div></div>
-          <img src="assets/cdoc-second.jpg" alt="Children's Dentistry of Charlottesville blog post, tips section" loading="lazy">
-        </div>
-        <div class="tile-quote"><span class="mark">&ldquo;</span>Start early. Make it fun. Lead by example.<span class="mark">&rdquo;</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CASE 07: ORENINC INDEX ============ -->
+<!-- ============ CASE 03: ORENINC INDEX ============ -->
 <section class="section dark" id="oreninc">
   <div class="wrap">
     <div class="case-top">
       <div>
-        <div class="eyebrow section-label">CASE STUDY 07</div>
+        <div class="eyebrow section-label">CASE STUDY 03</div>
         <h2 class="big">THE ORENINC INDEX</h2>
         <div class="tag">Financial &amp; Investor Writing</div>
       </div>
@@ -771,10 +563,108 @@ a{ color:inherit; }
   </div>
 </section>
 
+<!-- ============ CASE 04: STROBEL DENTISTRY ============ -->
+<section class="section dark" id="strobel">
+  <div class="wrap">
+    <div class="case-top">
+      <div>
+        <div class="eyebrow section-label">CASE STUDY 04</div>
+        <h2 class="big">STROBEL DENTISTRY</h2>
+        <div class="tag">SEO Copywriting &amp; Premium Positioning</div>
+      </div>
+      <div class="case-brief">Brief: reposition a century-old Chicago practice as an elevated, modern experience, without losing the heritage that makes it credible.</div>
+    </div>
+
+    <a class="cta-visit" href="https://strobeldentistry.com" target="_blank" rel="noopener">Visit strobeldentistry.com <span class="arrow">&rarr;</span></a>
+
+    <div class="quote-block">
+      <div class="quote-label">THE HOMEPAGE, AS WRITTEN</div>
+      <div class="quote">&ldquo;Elevated care, <span class="accent">backed by science.</span>&rdquo;</div>
+      <div class="subquote">Trusted Downtown Chicago Dentists. Family-owned for three generations.</div>
+    </div>
+
+    <div class="case-footer">
+      <div class="mini-frame">
+        <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://strobeldentistry.com" target="_blank" rel="noopener">strobeldentistry.com</a></div></div>
+        <img src="assets/strobel-hero.jpg" alt="Strobel Dentistry homepage hero" loading="lazy">
+      </div>
+      <div class="case-footer-text">Strobel has practiced in the same Loop building since 1932. That's real, ownable authority most dental sites have to manufacture. The challenge was pairing that heritage with a premium, modern positioning without drifting into "stuffy legacy practice" on one side or "generic dental site" on the other. "Elevated care backed by science" carries both: the confidence of a hotel brand and the credibility of a specialty practice.</div>
+    </div>
+  </div>
+</section>
+
+<section class="grid-section" style="background:var(--paper);">
+  <div class="wrap" style="padding-top:64px;">
+    <div class="tiles">
+      <div class="tile" style="flex:1.5;">
+        <div class="tile-frame">
+          <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">strobeldentistry.com</div></div>
+          <img src="assets/strobel-elevated.jpg" alt="Strobel Dentistry, General, Cosmetic, and Airway Dentistry" loading="lazy">
+        </div>
+        <div class="tile-quote"><span class="mark">&ldquo;</span>Our Chicago dentists pair modern technology and advanced, specialized training with concierge-level service.<span class="mark">&rdquo;</span></div>
+      </div>
+    </div>
+    <div class="grid-bottom">
+      <div class="grid-bottom-item">
+        <h4>Strategy</h4>
+        <p>The heritage line ("Since 1932") does the trust-building most dental sites spend paragraphs on. That frees the rest of the copy to sell the modern experience: technology, comfort, concierge service, without re-litigating credibility on every page.</p>
+      </div>
+      <div class="grid-bottom-item impact">
+        <h4>Impact</h4>
+        <p>A positioning built to compete with Chicago's other downtown dental brands on tone, not only on services. Premium without being cold. Established without feeling dated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE 05: JJH LAW ============ -->
+<section class="section dark" id="jjh">
+  <div class="wrap">
+    <div class="case-top">
+      <div>
+        <div class="eyebrow section-label">CASE STUDY 05</div>
+        <h2 class="big">JJH LAW</h2>
+        <div class="tag">Content Marketing / SEO Blog Writing, Professional Services</div>
+      </div>
+      <div class="case-brief">Brief: ghostwrite blog content for a Delmain law-firm client, translating legal concepts into guidance a small-business owner can actually use.</div>
+    </div>
+
+    <a class="cta-visit" href="https://www.jjh-law.com/business-transactions-due-diligence/" target="_blank" rel="noopener">Read the full post <span class="arrow">&rarr;</span></a>
+
+    <div class="quote-block">
+      <div class="quote-label">THE HEADLINE, AS WRITTEN</div>
+      <div class="quote">&ldquo;Navigating Business Transactions: The <span class="accent">Critical Role</span> of Due Diligence.&rdquo;</div>
+      <div class="subquote">"In the intricate landscape of business transactions, the adage 'knowledge is power' holds particularly true."</div>
+    </div>
+
+    <div class="case-footer single-footer">
+      <div class="tiles" style="margin-top:0;">
+        <div class="tile" style="flex:1.3;">
+          <div class="tile-frame">
+            <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://www.jjh-law.com/business-transactions-due-diligence/" target="_blank" rel="noopener">jjh-law.com</a></div></div>
+            <img src="assets/jjh-hero.jpg" alt="JJH Law blog post, Navigating Business Transactions" loading="lazy">
+          </div>
+        </div>
+        <div class="tile">
+          <div class="tile-frame">
+            <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">jjh-law.com</div></div>
+            <img src="assets/jjh-second.jpg" alt="JJH Law blog post, Understanding Due Diligence" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="case-footer-text" style="margin-top:24px;">Ghostwritten for JJH Law, a Delmain client, this post breaks down a legal concept for readers with no legal background. It's written entirely in the attorney's voice, structured around the questions a business owner is already searching, and shipped as part of an ongoing blog program covering dozens of professional-services clients.</div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CLOSING / CONTACT ============ -->
 <footer class="closing" id="contact">
   <div class="wrap">
     <div class="eyebrow">THANK YOU</div>
+    <div class="bio-row">
+      <img class="bio-photo" src="assets/headshot.jpg" alt="Paul Ostrow">
+      <p class="closing-bio">I'm a Portland-based copywriter and content strategist with 14+ years of experience writing for brands across healthcare, legal, finance, and small business. Most recently I was Writing Team Lead at Delmain, a full-service digital marketing agency, where I spent nearly a decade writing for clients across industries. Before that I led financial and investor communications for a natural resource sector research firm. I write best when the subject is complicated, the audience is specific, and the brief is harder than it looks. I'm also a runner, fly fisher, and devoted reader who believes good writing starts with genuine curiosity about the person reading it.</p>
+    </div>
     <h2>More <span>copy</span>, and more context, available on request.</h2>
     <p>Everything above is shown as published. Happy to walk through drafts, revisions, or the strategy behind any of it, or share more from 14 years across healthcare, legal, finance, and small business.</p>
     <div class="contact-row">
