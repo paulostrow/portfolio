@@ -126,8 +126,10 @@ a{ color:inherit; }
 /* ============ CASE STUDY: COPY HERO BLOCK ============ */
 .case-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:32px; flex-wrap:wrap; }
 .case-brief{
-  font-size:13px; color:var(--muted-2); max-width:280px; text-align:right; line-height:1.55;
+  font-family:'Space Grotesk', sans-serif;
+  font-size:15px; color:#E4E4EC; max-width:300px; text-align:right; line-height:1.6;
 }
+.case-brief b{ color:var(--gold); font-weight:700; }
 @media(max-width:720px){ .case-brief{ text-align:left; max-width:100%; } }
 
 .cta-visit{
@@ -149,6 +151,7 @@ a{ color:inherit; }
 .cta-visit .arrow{ transition:transform .2s ease; font-weight:700; }
 .cta-visit:hover .arrow{ transform:translateX(4px); }
 .cta-row{ margin-top:8px; }
+.cta-row-bottom{ margin-top:36px; display:flex; gap:14px; flex-wrap:wrap; }
 
 .quote-block{ margin-top:56px; }
 .quote-label{
@@ -256,6 +259,14 @@ a{ color:inherit; }
   border:2px solid var(--gold);
 }
 @media(max-width:560px){ .bio-row{ flex-direction:column; } }
+.about-me-heading{
+  font-family:'Archivo Black', sans-serif;
+  font-size:clamp(26px,4vw,36px);
+  letter-spacing:-0.5px;
+  margin-top:14px;
+}
+.closing-bio p{ margin-top:14px; }
+.closing-bio p:first-child{ margin-top:0; }
 .contact-row{
   display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:24px;
   margin-top:64px; padding-top:26px; border-top:1px solid var(--line-light);
@@ -266,6 +277,17 @@ a{ color:inherit; }
   color:var(--white); text-decoration:none; border-bottom:1px solid var(--cobalt-light); padding-bottom:2px;
 }
 .contact-links a:hover{ color:var(--cobalt-light); }
+.linkedin-btn{
+  display:inline-flex; align-items:center; gap:8px;
+  background:var(--gold) !important;
+  color:var(--ink) !important;
+  font-weight:700;
+  padding:10px 20px;
+  border-radius:30px;
+  border-bottom:none !important;
+  text-decoration:none;
+}
+.linkedin-btn:hover{ background:#FFC933; color:var(--ink) !important; }
 .footnote{ font-family:'Space Mono',monospace; font-size:10.5px; color:var(--muted-2); margin-top:40px; }
 
 /* ============ ABOUT / RANGE ============ */
@@ -361,32 +383,9 @@ a{ color:inherit; }
   <div class="wrap">
     <div class="eyebrow">SELECTED WORK / COPYWRITING &amp; CONTENT STRATEGY</div>
     <h1>Positioning brands.<br><span class="accent">Writing for people.</span></h1>
-    <p>A portfolio of real, published work across healthcare, law, finance, and events. Dental practices, a law firm, a financial newsletter, a company that rents restroom trailers. Different industries, same job every time: understand who's reading, and write something worth their time.</p>
-    <div class="hero-meta">
-      <div>ROLE<b>Copywriter &amp; Content Strategist</b></div>
-      <div>FOCUS<b>SEO Copywriting, Positioning, Conversion Copy</b></div>
-      <div>INDUSTRIES<b>Healthcare, Legal, Finance, Events</b></div>
-    </div>
+    <p>A portfolio of published work across healthcare, law, finance, and events.</p>
   </div>
 </header>
-
-<!-- ============ ABOUT / RANGE OF WORK ============ -->
-<section class="about">
-  <div class="wrap">
-    <div class="about-top">
-      <div>
-        <div class="eyebrow section-label">14+ YEARS / 150+ CLIENTS</div>
-        <h2>The case studies below are a sample. Not the whole body of work.</h2>
-        <div class="about-body">Nearly a decade leading content and copy at a full-service digital marketing agency, writing and editing high-volume SEO website copy, blog posts, email campaigns, social content, and ad copy for 50 to 60 client accounts at a time, spanning healthcare, professional services, finance, and small business. Before that, financial and investor communications for a resource-sector research firm and a publicly traded mining company. The work below spans several of those formats: SEO website copy, financial and investor writing, ghostwritten content marketing, and brand voice work outside healthcare entirely.</div>
-      </div>
-    </div>
-    <div class="about-stats">
-      <div>ROLE<b>Writing Team Lead & Content Strategist, Delmain (2017&ndash;2026); Director of Communications & Analyst, Oreninc (2012&ndash;2016)</b></div>
-      <div>INDUSTRIES<b>Healthcare, Legal, Finance, Small Business</b></div>
-      <div>FORMATS<b>Website Copy, Blog, Email, Social, Ad Copy, Investor Comms</b></div>
-    </div>
-  </div>
-</section>
 
 <!-- ============ CASE 01: SMILELOUNGE ============ -->
 <section class="section dark" id="smilelounge">
@@ -397,7 +396,7 @@ a{ color:inherit; }
         <h2 class="big">SMILELOUNGE</h2>
         <div class="tag">SEO Copywriting &amp; Brand Positioning</div>
       </div>
-      <div class="case-brief">Brief: reposition a Brooklyn practice to attract a younger audience and stand out in a saturated market, without losing clinical trust.</div>
+      <div class="case-brief"><b>Brief:</b> Reposition a Brooklyn practice to attract a younger audience and stand out in a saturated market, without losing clinical trust.</div>
     </div>
 
     <a class="cta-visit" href="https://smileloungebk.com" target="_blank" rel="noopener">Visit smileloungebk.com <span class="arrow">&rarr;</span></a>
@@ -413,7 +412,7 @@ a{ color:inherit; }
         <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://smileloungebk.com" target="_blank" rel="noopener">smileloungebk.com</a></div></div>
         <img src="assets/sl-hero.jpg" alt="Smilelounge homepage hero" loading="lazy">
       </div>
-      <div class="case-footer-text">The client asked for <b>"the best website the agency had ever built"</b> in one of the most competitive dental markets in the country. Every headline pairs neighborhood and service, like "Greenpoint Dentists" and "Greenpoint-owned and operated." That's a local-SEO pattern that targets exactly how people search, while the voice stays playful enough to sound like the brand, not a keyword list.</div>
+      <div class="case-footer-text">The client asked for <b>"the best website the agency had ever built"</b> in one of the most competitive dental markets in the country.</div>
     </div>
   </div>
 </section>
@@ -445,13 +444,16 @@ a{ color:inherit; }
     </div>
     <div class="grid-bottom">
       <div class="grid-bottom-item">
-        <h4>SEO &amp; Conversion Strategy</h4>
+        <h4>Strategy</h4>
         <p>The homepage headline does the SEO work, pairing neighborhood and service terms so it ranks for how people actually search. Everywhere else on the site, the copy drops the keywords entirely and just sounds like the brand. "Treat Yourself" sells a discount without reading like a search term.</p>
       </div>
       <div class="grid-bottom-item impact">
         <h4>Impact</h4>
         <p>The client called it the best site the agency had built and became a vocal advocate, referring new business off the strength of this project alone.</p>
       </div>
+    </div>
+    <div class="cta-row-bottom">
+      <a class="cta-visit" href="https://smileloungebk.com" target="_blank" rel="noopener">Visit smileloungebk.com <span class="arrow">&rarr;</span></a>
     </div>
   </div>
 </section>
@@ -465,7 +467,7 @@ a{ color:inherit; }
         <h2 class="big">PRIVY CHAMBERS</h2>
         <div class="tag">Brand Voice &amp; Positioning, Outside Healthcare</div>
       </div>
-      <div class="case-brief">Brief: apply the same positioning skill set to a completely different category. Luxury restroom trailer rentals for weddings, events, and job sites.</div>
+      <div class="case-brief"><b>Brief:</b> Apply the same positioning skill set to a completely different category. Luxury restroom trailer rentals for weddings, events, and job sites.</div>
     </div>
 
     <a class="cta-visit" href="https://privychambers.com" target="_blank" rel="noopener">Visit privychambers.com <span class="arrow">&rarr;</span></a>
@@ -481,7 +483,7 @@ a{ color:inherit; }
         <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://privychambers.com" target="_blank" rel="noopener">privychambers.com</a></div></div>
         <img src="assets/privy-nicer.jpg" alt="Privy Chambers, Everything we do is just nicer" loading="lazy">
       </div>
-      <div class="case-footer-text">This is the same job as the dental sites: find the real, ownable story and let the copy carry it, for a category with a built-in punchline. The site never leans on the joke. It treats the founder's actual story (a bad bathroom experience while planning her own wedding) and the premium details (chandeliers, sound systems, real vanities) as the entire pitch, and lets "nicer" do double duty as both the promise and the personality. The same instinct, applied to a different category, budget, and sense of humor.</div>
+      <div class="case-footer-text">My job was to find the real, ownable story and let the copy carry it, for a category with a built-in punchline. The site never leans on the joke.</div>
     </div>
   </div>
 </section>
@@ -504,6 +506,19 @@ a{ color:inherit; }
         <div class="tile-quote"><span class="mark">&ldquo;</span>Largest Luxury Restroom Rental Trailer Fleet West of the Mississippi.<span class="mark">&rdquo;</span></div>
       </div>
     </div>
+    <div class="grid-bottom">
+      <div class="grid-bottom-item">
+        <h4>Strategy</h4>
+        <p>It treats the founder's actual story (a bad bathroom experience while planning her own wedding) and the premium details (chandeliers, sound systems, real vanities) as the entire pitch.</p>
+      </div>
+      <div class="grid-bottom-item impact">
+        <h4>Impact</h4>
+        <p>"Nicer" does double duty as both the promise and the personality, a brand voice that works without ever leaning on the obvious joke.</p>
+      </div>
+    </div>
+    <div class="cta-row-bottom">
+      <a class="cta-visit" href="https://privychambers.com" target="_blank" rel="noopener">Visit privychambers.com <span class="arrow">&rarr;</span></a>
+    </div>
   </div>
 </section>
 
@@ -514,9 +529,9 @@ a{ color:inherit; }
       <div>
         <div class="eyebrow section-label">CASE STUDY 03</div>
         <h2 class="big">THE ORENINC INDEX</h2>
-        <div class="tag">Financial &amp; Investor Writing</div>
+        <div class="tag">Weekly Financial Research Publication</div>
       </div>
-      <div class="case-brief">A weekly market newsletter, written in-house for Oreninc from 2012 to 2016, before my time at Delmain. A financial research and publishing company serving the Canadian junior resource sector.</div>
+      <div class="case-brief"><b>Brief:</b> An ongoing editorial product, not a one-off project, built, written, and maintained on a weekly deadline.</div>
     </div>
 
     <div style="display:flex; gap:14px; flex-wrap:wrap;">
@@ -534,32 +549,36 @@ a{ color:inherit; }
         <p>Sole writer, analyst, and editor. Tracked raw deal data, identified trends and anomalies, wrote the market commentary, and published every week without exception.</p>
       </div>
       <div class="editorial-item">
-        <h4>What Made It Hard</h4>
-        <p>The data had to be right. The analysis had to add value beyond the numbers. The voice had to be authoritative without being dry. And it had to be ready every single week.</p>
+        <h4>The Impact</h4>
+        <p>The Oreninc Index led to increased deal flow for the firm, including investment for Aston Bay Holdings, the firm's primary investment during this period. I managed the sales process of the Oreninc brand in 2016, which led to a successful sale to Soar Financial Partners.</p>
       </div>
     </div>
 
-    <div class="editions-label">TWO PUBLISHED EDITIONS</div>
-    <div class="editions">
-      <div class="edition-card">
-        <div class="mini-frame">
+  </div>
+</section>
+
+<section class="grid-section" style="background:var(--paper);">
+  <div class="wrap" style="padding-top:64px;">
+    <div class="tiles">
+      <div class="tile">
+        <div class="tile-frame">
           <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://oreninc.co/index/oreninc-index-update-january-7-2016/" target="_blank" rel="noopener">oreninc.co</a></div></div>
           <img src="assets/oren-hero1.jpg" alt="Oreninc Index Update, January 7, 2016" loading="lazy">
         </div>
-        <div class="edition-date">January 7, 2016</div>
-        <div class="edition-headline">&ldquo;Oreninc Index Falls to Four-Month Low.&rdquo;</div>
+        <div class="tile-quote">Jan. 7, 2016: <span class="mark">&ldquo;</span>Oreninc Index Falls to Four-Month Low.<span class="mark">&rdquo;</span></div>
       </div>
-      <div class="edition-card">
-        <div class="mini-frame">
+      <div class="tile">
+        <div class="tile-frame">
           <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://oreninc.co/index/oreninc-index-update-march-6-2014/" target="_blank" rel="noopener">oreninc.co</a></div></div>
           <img src="assets/oren-hero2.jpg" alt="Oreninc Index Update, March 6, 2014" loading="lazy">
         </div>
-        <div class="edition-date">March 6, 2014</div>
-        <div class="edition-headline">&ldquo;Oreninc Index Strong During PDAC Week.&rdquo;</div>
+        <div class="tile-quote">Mar. 6, 2014: <span class="mark">&ldquo;</span>Oreninc Index Strong During PDAC Week.<span class="mark">&rdquo;</span></div>
       </div>
     </div>
-
-    <div class="case-footer-text" style="margin-top:44px; max-width:760px;">The Oreninc Index was a weekly newsletter published by Oreninc, tracking financing activity across the Canadian mining, oil, and gas sectors. Each week, I collected the data from public filings and disclosures, then wrote the analysis: what moved, why it moved, and what it meant for the market. It was written for a specialist investor audience and went out every week without exception. Both full editions are linked above.</div>
+    <div class="cta-row-bottom">
+      <a class="cta-visit" href="https://oreninc.co/index/oreninc-index-update-january-7-2016/" target="_blank" rel="noopener">Read the Jan 2016 edition <span class="arrow">&rarr;</span></a>
+      <a class="cta-visit" href="https://oreninc.co/index/oreninc-index-update-march-6-2014/" target="_blank" rel="noopener">Read the Mar 2014 edition <span class="arrow">&rarr;</span></a>
+    </div>
   </div>
 </section>
 
@@ -572,7 +591,7 @@ a{ color:inherit; }
         <h2 class="big">STROBEL DENTISTRY</h2>
         <div class="tag">SEO Copywriting &amp; Premium Positioning</div>
       </div>
-      <div class="case-brief">Brief: reposition a century-old Chicago practice as an elevated, modern experience, without losing the heritage that makes it credible.</div>
+      <div class="case-brief"><b>Brief:</b> Reposition a century-old Chicago practice as an elevated, modern experience, without losing the heritage that makes it credible.</div>
     </div>
 
     <a class="cta-visit" href="https://strobeldentistry.com" target="_blank" rel="noopener">Visit strobeldentistry.com <span class="arrow">&rarr;</span></a>
@@ -588,7 +607,7 @@ a{ color:inherit; }
         <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://strobeldentistry.com" target="_blank" rel="noopener">strobeldentistry.com</a></div></div>
         <img src="assets/strobel-hero.jpg" alt="Strobel Dentistry homepage hero" loading="lazy">
       </div>
-      <div class="case-footer-text">Strobel has practiced in the same Loop building since 1932. That's real, ownable authority most dental sites have to manufacture. The challenge was pairing that heritage with a premium, modern positioning without drifting into "stuffy legacy practice" on one side or "generic dental site" on the other. "Elevated care backed by science" carries both: the confidence of a hotel brand and the credibility of a specialty practice.</div>
+      <div class="case-footer-text">Strobel has practiced in the same Loop building since 1932. That's real, ownable authority most dental sites have to manufacture.</div>
     </div>
   </div>
 </section>
@@ -596,12 +615,18 @@ a{ color:inherit; }
 <section class="grid-section" style="background:var(--paper);">
   <div class="wrap" style="padding-top:64px;">
     <div class="tiles">
-      <div class="tile" style="flex:1.5;">
+      <div class="tile">
         <div class="tile-frame">
           <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">strobeldentistry.com</div></div>
           <img src="assets/strobel-elevated.jpg" alt="Strobel Dentistry, General, Cosmetic, and Airway Dentistry" loading="lazy">
         </div>
-        <div class="tile-quote"><span class="mark">&ldquo;</span>Our Chicago dentists pair modern technology and advanced, specialized training with concierge-level service.<span class="mark">&rdquo;</span></div>
+      </div>
+      <div class="tile">
+        <div class="tile-frame">
+          <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">strobeldentistry.com</div></div>
+          <img src="assets/strobel-century.jpg" alt="Strobel Dentistry, team photo along the Chicago River" loading="lazy">
+        </div>
+        <div class="tile-quote"><span class="mark">&ldquo;</span>After nearly a century in The Loop, we're still moving forward.<span class="mark">&rdquo;</span></div>
       </div>
     </div>
     <div class="grid-bottom">
@@ -613,6 +638,9 @@ a{ color:inherit; }
         <h4>Impact</h4>
         <p>A positioning built to compete with Chicago's other downtown dental brands on tone, not only on services. Premium without being cold. Established without feeling dated.</p>
       </div>
+    </div>
+    <div class="cta-row-bottom">
+      <a class="cta-visit" href="https://strobeldentistry.com" target="_blank" rel="noopener">Visit strobeldentistry.com <span class="arrow">&rarr;</span></a>
     </div>
   </div>
 </section>
@@ -626,7 +654,7 @@ a{ color:inherit; }
         <h2 class="big">JJH LAW</h2>
         <div class="tag">Content Marketing / SEO Blog Writing, Professional Services</div>
       </div>
-      <div class="case-brief">Brief: ghostwrite blog content for a Delmain law-firm client, translating legal concepts into guidance a small-business owner can actually use.</div>
+      <div class="case-brief"><b>Brief:</b> Ghostwrite blog content for a Delmain law-firm client, translating legal concepts into guidance a small-business owner can actually use.</div>
     </div>
 
     <a class="cta-visit" href="https://www.jjh-law.com/business-transactions-due-diligence/" target="_blank" rel="noopener">Read the full post <span class="arrow">&rarr;</span></a>
@@ -637,22 +665,30 @@ a{ color:inherit; }
       <div class="subquote">"In the intricate landscape of business transactions, the adage 'knowledge is power' holds particularly true."</div>
     </div>
 
-    <div class="case-footer single-footer">
-      <div class="tiles" style="margin-top:0;">
-        <div class="tile" style="flex:1.3;">
-          <div class="tile-frame">
-            <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://www.jjh-law.com/business-transactions-due-diligence/" target="_blank" rel="noopener">jjh-law.com</a></div></div>
-            <img src="assets/jjh-hero.jpg" alt="JJH Law blog post, Navigating Business Transactions" loading="lazy">
-          </div>
-        </div>
-        <div class="tile">
-          <div class="tile-frame">
-            <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url">jjh-law.com</div></div>
-            <img src="assets/jjh-second.jpg" alt="JJH Law blog post, Understanding Due Diligence" loading="lazy">
-          </div>
-        </div>
+    <div class="case-footer">
+      <div class="mini-frame">
+        <div class="frame-bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="frame-url"><a href="https://www.jjh-law.com/business-transactions-due-diligence/" target="_blank" rel="noopener">jjh-law.com</a></div></div>
+        <img src="assets/jjh-hero.jpg" alt="JJH Law blog post, Navigating Business Transactions" loading="lazy">
       </div>
-      <div class="case-footer-text" style="margin-top:24px;">Ghostwritten for JJH Law, a Delmain client, this post breaks down a legal concept for readers with no legal background. It's written entirely in the attorney's voice, structured around the questions a business owner is already searching, and shipped as part of an ongoing blog program covering dozens of professional-services clients.</div>
+      <div class="case-footer-text">Ghostwritten for JJH Law, a Delmain client, this post breaks down a legal concept for readers with no legal background.</div>
+    </div>
+  </div>
+</section>
+
+<section class="grid-section" style="background:var(--paper);">
+  <div class="wrap" style="padding-top:64px;">
+    <div class="grid-bottom" style="margin-top:0;">
+      <div class="grid-bottom-item">
+        <h4>Strategy</h4>
+        <p>It's written entirely in the attorney's voice, structured around the questions a business owner is already searching.</p>
+      </div>
+      <div class="grid-bottom-item impact">
+        <h4>Impact</h4>
+        <p>Shipped as part of an ongoing blog program covering dozens of professional-services clients.</p>
+      </div>
+    </div>
+    <div class="cta-row-bottom">
+      <a class="cta-visit" href="https://www.jjh-law.com/business-transactions-due-diligence/" target="_blank" rel="noopener">Read the full post <span class="arrow">&rarr;</span></a>
     </div>
   </div>
 </section>
@@ -661,16 +697,21 @@ a{ color:inherit; }
 <footer class="closing" id="contact">
   <div class="wrap">
     <div class="eyebrow">THANK YOU</div>
+    <h3 class="about-me-heading">About Me</h3>
     <div class="bio-row">
       <img class="bio-photo" src="assets/headshot.jpg" alt="Paul Ostrow">
-      <p class="closing-bio">I'm a Portland-based copywriter and content strategist with 14+ years of experience writing for brands across healthcare, legal, finance, and small business. Most recently I was Writing Team Lead at Delmain, a full-service digital marketing agency, where I spent nearly a decade writing for clients across industries. Before that I led financial and investor communications for a natural resource sector research firm. I write best when the subject is complicated, the audience is specific, and the brief is harder than it looks. I'm also a runner, fly fisher, and devoted reader who believes good writing starts with genuine curiosity about the person reading it.</p>
+      <div class="closing-bio">
+        <p>I'm a Portland-based copywriter and content strategist with 14+ years of experience writing for brands across healthcare, legal, finance, and small business.</p>
+        <p>Most recently I was Writing Team Lead at Delmain, a full-service digital marketing agency, where I spent nearly a decade writing for clients across industries. Before Delmain, I led financial and investor communications for a natural resource sector research firm.</p>
+        <p>I write best when the subject is complicated, the audience is specific, and the brief is harder than it looks. I'm also a runner, fly fisher, and devoted reader who believes good writing starts with genuine curiosity about the person reading it.</p>
+      </div>
     </div>
     <h2>More <span>copy</span>, and more context, available on request.</h2>
-    <p>Everything above is shown as published. Happy to walk through drafts, revisions, or the strategy behind any of it, or share more from 14 years across healthcare, legal, finance, and small business.</p>
     <div class="contact-row">
       <div class="contact-links">
         <a href="mailto:pjostrow@gmail.com">pjostrow@gmail.com</a>
         <a href="tel:9787661768">978.766.1768</a>
+        <a class="linkedin-btn" href="https://www.linkedin.com/in/paul-ostrow-5bb67a48/" target="_blank" rel="noopener">View LinkedIn &rarr;</a>
       </div>
       <div class="footnote">PAUL OSTROW, COPYWRITER &amp; CONTENT STRATEGIST</div>
     </div>
